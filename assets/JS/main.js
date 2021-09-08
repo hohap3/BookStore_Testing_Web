@@ -81,7 +81,6 @@ modalContainerLogin.addEventListener('click',(e) => {
 headerSearchHistory.addEventListener('mousedown',(e) => {
   e.preventDefault();
 
-  console.log(e.target);
 
 })
 
