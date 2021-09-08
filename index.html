@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/CSS/base.css"> <!-- Link file base.css -->
+  <link rel="stylesheet" href="./assets/CSS/main.css"> <!-- Link file main.css -->
+  <link rel="stylesheet" href="./assets/CSS/grid.css"> <!-- Link file grid.css -->
+  <link rel="stylesheet" href="./assets/CSS/responsive.css"> <!-- Link file responsive.css -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Link font google -->
+  <link rel="stylesheet" href="./assets/icon/fontawesome-free-5.13.0-web/css/all.min.css"> <!-- Link file icon css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Link file reset css -->
+  <link rel="shortcut icon" href="./assets/img/BookStore-icon.jpg" type="image/x-icon">
+  <title>BookStore</title>
+</head>
+<body>
+  
+  <div class="app">
+
+    <header class="header">
+
+      <div class="grid wide">
+        <nav class="header__navbar hide-on-tablet-mobile">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-item--separate-line header__navbar-item--has-qr">
+              <a href="#" class="header__navbar-item-link">Vào cửa hàng ứng dụng TickID</a>
+
+              <div class="header__qr">
+                <img src="./assets/img/QR-code.png" class="header__qr-img" alt="QR code">
+
+                <div class="header__qr-download-app">
+                  <a href="#" class="header__qr-download-app-link">
+                    <img src="./assets/img/Google-play.png" class="header__qr-download-app-img" alt="Google Play app">
+                  </a>
+                  <a href="#" class="header__qr-download-app-link">
+                    <img src="./assets/img/App-store.png" class="header__qr-download-app-img" alt="App Store app">
+                  </a>
+                </div>
+              </div>
+
+            </li>
+            <li class="header__navbar-item">
+              <span class="header__navbar-item-span">Kết nối</span>
+              <a href="#" class="header__navbar-social-link">
+                <i class="header__navbar-social-icon fab fa-facebook"></i>
+              </a>
+              <a href="#" class="header__navbar-social-link">
+                <i class="header__navbar-social-icon fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-item--has-notify">
+              <a href="#" class="header__navbar-item-link">
+                <i class="header__navbar-icon far fa-bell"></i>
+                Thông báo
+              </a>
+
+              <div class="header__notify">
+                <h2 class="header__notify-heading">Thông báo mới nhận</h2>
+
+                <nav class="header__notify-navbar">
+                  <ul class="header__notify-list">
+                    <li class="header__notify-item">
+                      <a href="#" class="header__notify-link">
+                        <img src="./assets/img/ket-gioi.jpg" alt="Kết giới" class="header__notify-item-img">
+
+                        <div class="header__notify-details">
+                          <span class="header__notify-item-title">Tiểu thuyết kết giới - Cuộc chiến đầu tiên</span>
+                          <span class="header__notify-item-des">Tiểu thuyết chiến tranh</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="header__notify-item">
+                      <a href="#" class="header__notify-link">
+                        <img src="./assets/img/novel-2.jpg" alt="Bên nhau trọn đời" class="header__notify-item-img">
+
+                        <div class="header__notify-details">
+                          <span class="header__notify-item-title">Tiểu thuyết Cố mạn - Bên nhau trọn đời</span>
+                          <span class="header__notify-item-des">Tiểu thuyết tình cảm</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="header__notify-item">
+                      <a href="#" class="header__notify-link">
+                        <img src="./assets/img/doraemon_tap_20.jpg" alt="Doraemon" class="header__notify-item-img">
+
+                        <div class="header__notify-details">
+                          <span class="header__notify-item-title">Truyện dài Doraemon - Nobita và truyền thuyết vua mặt trời</span>
+                          <span class="header__notify-item-des">Truyện tranh thiếu nhi</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <div class="header__notify-view-all">
+                  <a href="#" class="header__notify-view-btn" title="Xem tất cả thông báo" >Xem tất cả</a>
+                </div>
+
+              </div>
+
+            </li>
+            <li class="header__navbar-item">
+              <a href="#" class="header__navbar-item-link">
+                <i class="header__navbar-icon far fa-question-circle"></i>
+                Trợ giúp
+              </a>
+            </li>
+            <li class="header__navbar-item header__navbar-item--separate-line">
+              <a href="#" class="header__navbar-item-link header__navbar-item-link--has-modal">
+                <i class="header__navbar-icon far fa-registered"></i>
+                Đăng ký
+              </a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="#" class="header__navbar-item-link header__navbar-item-link--has-modal-login">
+                <i class="header__navbar-icon fas fa-sign-in-alt"></i>
+                Đăng nhập
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+        
+        <div class="header__with-search">
+
+          <div class="header__mobile-bar-search hide-on-pc">
+            <label for="header__mobile-bars" class="header__mobile-bar">
+              <i class="fas fa-bars"></i>
+            </label>
+
+            <label for="header__mobile-search" class="header__mobile-search-btn hide-on-tablet" >
+              <i class="fas fa-search"></i>
+            </label>
+
+            <input type="checkbox" id="header__mobile-bars" hidden>
+
+            
+
+            <label for="header__mobile-bars" class="header__mobile-overlay"></label for="">
+
+            <div class="header__mobile-navbar">
+              <h2 class="navbar__heading">Danh mục sản phẩm</h2>
+
+              <ul class="navbar__left-list">
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Sách trong nước
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Foreign books
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Dụng cụ học sinh
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Đồ chơi
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Làm đẹp - Sức khỏe
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Hành trang đến trường
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Đồ chơi theo thương hiệu
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    DCHS theo thương hiệu
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Bách hóa online
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="header__logo hide-on-tablet">
+            <a href="#" class="header__logo-link">
+              <img src="./assets/img/booklogo(white).png" alt="Book Store logo" class="header__logo-img">
+            </a>
+          </div>
+
+          <input type="checkbox" id="header__mobile-search" hidden>
+    
+          <div class="header__search">
+            <div class="header__search-wrap">
+              <input type="text" name="Search item" class="header__input-search" placeholder="Tìm kiếm..." >
+
+              <div class="header__search-history">
+                <h2 class="header__search-history-title">Lịch sử tìm kiếm</h2>
+
+                <ul class="header__search-history-list">
+                  <li class="header__search-history-item">
+                    <a href="#" class="header__search-history-link">Truyện tranh Doraemon</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="#" class="header__search-history-link">Tiểu thuyết</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="#" class="header__search-history-link">Sách giáo khoa</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>  
+
+            <div class="header__search-selection">
+              <span class="header__search-selection-label">Trong Shop</span>
+              <span class="header__search-selection-icon"><i class="fas fa-angle-down"></i></span>
+
+              
+              <ul class="header__search-selection-list">
+                <li class="header__search-selection-item">
+                  <a href="#" class="header__search-selection-link">
+                    Trong Shop
+                    <i class="header__search-selection-icon-tick fas fa-check"></i>
+                  </a>
+                </li>
+                <li class="header__search-selection-item">
+                  <a href="#" class="header__search-selection-link">Ngoài Shop</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header__search-button">
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fas fa-search"></i>
+              </button>
+            </div>
+
+          </div>
+
+          <div class="header__cart">
+            <div class="header__cart-wrap">
+              <i class="header__cart-icon fas fa-shopping-cart"></i>
+
+              <span class="header__cart-notice"></span>
+
+              <div class="header__cart-list">
+                <h2 class="header__cart-title">Sản phẩm đã thêm</h2>
+
+                <ul class="header__cart-list-item">
+                  <!-- <li class="header__cart-item">
+                    <a href="#" class="header__cart-item-link">
+
+                      <img src="./assets/img/doraemon_tap_1.jpg" alt="" class="header__cart-item-img">
+
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Truyện ngắn Doaremon tập 1</h5>
+
+                          <div class="header__cart-price-wrap">
+                            <span class="header__cart-price">11.500đ</span>
+                            <span class="header__cart-x">x</span>
+                            <span class="header__cart-amount">1</span>
+                          </div>
+
+                        </div>
+
+                        <div class="header__cart-item-bottom">
+                          <span class="header__cart-des">Truyện tranh dành cho thiếu nhi</span>
+                          <button class="header__cart-delete">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="header__cart-item">
+                    <a href="#" class="header__cart-item-link">
+
+                      <img src="./assets/img/novel-2.jpg" alt="" class="header__cart-item-img">
+
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Tiểu thuyết Cố Mạn - Sống bên nhau trọn đời</h5>
+
+                          <div class="header__cart-price-wrap">
+                            <span class="header__cart-price">45.500đ</span>
+                            <span class="header__cart-x">x</span>
+                            <span class="header__cart-amount">1</span>
+                          </div>
+
+                        </div>
+
+                        <div class="header__cart-item-bottom">
+                          <span class="header__cart-des">Tiểu thuyết tình yêu</span>
+                          <button class="header__cart-delete">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="header__cart-item">
+                    <a href="#" class="header__cart-item-link">
+
+                      <img src="./assets/img/education-book-2.jpg" alt="" class="header__cart-item-img">
+
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Sách giáo khoa hóa học lớp 12</h5>
+
+                          <div class="header__cart-price-wrap">
+                            <span class="header__cart-price">12.500đ</span>
+                            <span class="header__cart-x">x</span>
+                            <span class="header__cart-amount">1</span>
+                          </div>
+
+                        </div>
+
+                        <div class="header__cart-item-bottom">
+                          <span class="header__cart-des">Sách giáo khoa cấp 3</span>
+                          <button class="header__cart-delete">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li> -->
+
+                </ul>
+
+                <a href="#" class="header__cart-view btn btn--primary">Xem giỏ hàng</a>
+
+              </div>
+
+              
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <div class="navbar-and-slider-content">
+      <div class="grid wide">
+        <div class="row sm-gutter">
+          <div class="col l-3 m-0 c-0">
+            <nav class="navbar__left">
+              <h2 class="navbar__heading">Danh mục sản phẩm</h2>
+
+              <ul class="navbar__left-list">
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Sách trong nước
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Foreign books
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Dụng cụ học sinh
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Đồ chơi
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Làm đẹp - Sức khỏe
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Hành trang đến trường
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Đồ chơi theo thương hiệu
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    DCHS theo thương hiệu
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+                <li class="navbar__left-item">
+                  <a href="#" class="navbar__left-link">
+                    Bách hóa online
+                    <i class="navbar__left-icon fas fa-angle-right"></i>
+                  </a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col l-9 m-12 c-12">
+            <div class="slider">
+              <div class="slider-container">
+
+                <div class="slider-picture">
+                  <img src="./assets/img/slider-1.png" alt="Slider 1" class="slider-img">
+                </div>
+
+                
+                <div class="slider-picture">
+                  <img src="./assets/img/slider-2.jpg" alt="Slider 2" class="slider-img">
+                </div>
+
+                
+                <div class="slider-picture">
+                  <img src="./assets/img/slider-3.png" alt="Slider 3" class="slider-img">
+                </div>
+
+                <div class="slider-picture">
+                  <img src="./assets/img/slider-4.png" alt="Slider 4" class="slider-img">
+                </div>
+
+                <div class="slider-picture">
+                  <img src="./assets/img/slider-5.png" alt="Slider 5" class="slider-img">
+                </div>
+
+                <a onclick = "plusSliders(1)" class="prev-btn"><i class="fas fa-angle-left"></i></a>
+
+                <a onclick="plusSliders(-1)" class="next-btn"><i class="fas fa-angle-right"></i></a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="coupon-container">
+      <div class="grid wide">
+        <div class="row sm-gutter">
+          <div class="col l-3 m-6 c-6">
+            <a href="#" class="coupon-link">
+              <img src="./assets/img/coupon1-310x210.png" alt="Coupon" class="coupon-img">
+            </a>
+          </div>
+
+          <div class="col l-3 m-6 c-6">
+            <a href="#" class="coupon-link">
+              <img src="./assets/img/coupon2 310x210.png" alt="Coupon" class="coupon-img">
+            </a>
+          </div>
+
+          <div class="col l-3 m-6 c-6">
+            <a href="#" class="coupon-link">
+              <img src="./assets/img/coupon3 310 x 210.jpg" alt="Coupon" class="coupon-img">
+            </a>
+          </div>
+
+          <div class="col l-3 m-6 c-6">
+            <a href="#" class="coupon-link">
+              <img src="./assets/img/coupon4 310x210.jpg" alt="Coupon" class="coupon-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-content">
+      <div class="grid wide">
+        <nav class="div-content-nav">
+
+          <ul class="div-content-list">
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_flashsale.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Flash Sale</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_dochoi.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Đồ chơi</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico-xuhuong.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Xu hướng</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_mgg.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Mã giảm giá</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_PCSC.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Phiên chợ sách cũ</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_covid-2.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Chăm sóc sức khỏe</span>
+            </li>
+
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_manga.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Manga - Comic</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_vpp_hot.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Văn phòng phẩm</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico_game hub.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Giải trí</span>
+            </li>
+
+            <li class="div-content-item">
+              <a href="#" class="div-content-link">
+                <img src="./assets/img/ico-thucpham-hot.png" alt="" class="div-content-img">
+              </a>
+              <span class="div-content-text">Tiếp thực Sài Gòn</span>
+            </li>
+
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="web-content">
+
+      <div class="home-product">
+
+        <div class="product-container">
+          <div class="grid wide">
+
+            <div class="product-contain">
+              <header class="product__heading">
+                <h2 class="product__heading-title">Sách giáo khoa cấp III</h2>
+
+                <div class="product-sale-off">
+                  <img src="./assets/img/ico_flashsale.png" class="product-sale-off-icon" alt="">
+                  <span class="product-heading-sale-off" >Flash Sale</span>
+                  <span class="product-heading-sale-off-title">Kết thúc trong</span>
+                  <span class="product-heading-sale-off-title"></span>
+                </div>
+
+              </header>
+  
+              <ul class="product__selection-list">
+                 <li class="product__selection-item">
+                   <a href="#" class="product__selection-link">
+                     Lớp 10
+                   </a>
+                  </li> 
+  
+                  <li class="product__selection-item">
+                    <a href="#" class="product__selection-link">
+                      Lớp 11
+                    </a>
+                   </li>
+  
+                   <li class="product__selection-item product__selection-item--active">
+                    <a href="#" class="product__selection-link">
+                      Lớp 12
+                    </a>
+                   </li>
+              </ul>
+
+              <div class="row">
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/education-book.jpg');"></div>
+
+                    <h2 class="product-item-title">Sách giáo khoa sinh học lớp 12 (nâng cao)</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Giáo Dục</span>
+                      <span class="product-item-country">Việt Nam</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/education-book-2.jpg');"></div>
+
+                    <h2 class="product-item-title">Sách giáo khoa hóa học lớp 12 </h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Giáo Dục</span>
+                      <span class="product-item-country">Việt Nam</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/ngu-van-lop-12.png');"></div>
+
+                    <h2 class="product-item-title">Sách giáo khoa ngữ văn lớp 12 </h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Giáo Dục</span>
+                      <span class="product-item-country">Việt Nam</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/sach_giao_khoa_vat_ly_12.jpg');"></div>
+
+                    <h2 class="product-item-title">Sách giáo khoa vật lí lớp 12 </h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Giáo Dục</span>
+                      <span class="product-item-country">Việt Nam</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/tieng-anh-lop-12.png');"></div>
+
+                    <h2 class="product-item-title">Sách giáo khoa tiếng anh lớp 12 </h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Giáo Dục</span>
+                      <span class="product-item-country">Việt Nam</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="product-item-view">
+                  <a href="#" class="btn btn--primary product-item-view-link">Xem thêm</a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-contain">
+              <header class="product__heading">
+                <h2 class="product__heading-title">Truyện tranh Doraemon</h2>
+              </header>
+  
+              <ul class="product__selection-list">
+                 <li class="product__selection-item">
+                   <a href="#" class="product__selection-link">
+                     Truyện ngắn
+                   </a>
+                  </li> 
+  
+                  <li class="product__selection-item">
+                    <a href="#" class="product__selection-link">
+                      Truyện dài
+                    </a>
+                   </li>
+  
+                   <li class="product__selection-item product__selection-item--active">
+                    <a href="#" class="product__selection-link">
+                      Tổng hợp
+                    </a>
+                   </li>
+              </ul>
+
+              <div class="row">
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/doraemon_tap_1.jpg');"></div>
+
+                    <h2 class="product-item-title">Truyện ngắn Doraemon tập 1</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Kim Đồng</span>
+                      <span class="product-item-country">Nhật Bản</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/doraemon_tap_15.jpg');"></div>
+
+                    <h2 class="product-item-title">Truyện dài Doraemon tập 15 - Đấng toàn năng Nobita</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Kim Đồng</span>
+                      <span class="product-item-country">Nhật Bản</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/doraemon_tap_20.jpg');"></div>
+
+                    <h2 class="product-item-title">Truyện dài Doraemon tập 20 - Nobita và truyền thuyết vua mặt trời </h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Kim Đồng</span>
+                      <span class="product-item-country">Nhật Bản</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/doraemon_tap_35.jpg');"></div>
+
+                    <h2 class="product-item-title">Truyện ngắn Doraemon tập 35</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Kim Đồng</span>
+                      <span class="product-item-country">Nhật Bản</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/doraemon_tap_12.jpg');"></div>
+
+                    <h2 class="product-item-title">Truyện dài Doraemon tập 15 - Nobita và vương quốc trên mây</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Kim Đồng</span>
+                      <span class="product-item-country">Nhật Bản</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="product-item-view">
+                  <a href="#" class="btn btn--primary product-item-view-link">Xem thêm</a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-contain">
+              <header class="product__heading">
+                <h2 class="product__heading-title">Tiểu thuyết</h2>
+              </header>
+  
+              <ul class="product__selection-list">
+                 <li class="product__selection-item">
+                   <a href="#" class="product__selection-link">
+                     Trong nước
+                   </a>
+                  </li> 
+  
+                  <li class="product__selection-item">
+                    <a href="#" class="product__selection-link">
+                      Ngoài nước
+                    </a>
+                   </li>
+  
+                   <li class="product__selection-item product__selection-item--active">
+                    <a href="#" class="product__selection-link">
+                      Bán chạy
+                    </a>
+                   </li>
+              </ul>
+
+              <div class="row">
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/ket-gioi.jpg');"></div>
+
+                    <h2 class="product-item-title">Tiểu thuyết kết giới - Cuộc chiến đầu tiên</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">65.500đ</span>
+                      <span class="product-item-new-price">45.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Trẻ</span>
+                      <span class="product-item-country">Anh</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/novel.jpg');"></div>
+
+                    <h2 class="product-item-title">Tiểu thuyết Cố Mạn - Yêu em từ cái nhìn đầu tiên</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">65.500đ</span>
+                      <span class="product-item-new-price">45.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Văn Hóa</span>
+                      <span class="product-item-country">Trung Quốc</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/novel-2.jpg');"></div>
+
+                    <h2 class="product-item-title">Tiểu thuyết Cố Mạn - Bên nhau trọn đời</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">65.500đ</span>
+                      <span class="product-item-new-price">45.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Văn Hóa</span>
+                      <span class="product-item-country">Trung Quốc</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/novel-3.jpg');"></div>
+
+                    <h2 class="product-item-title">Ai và Ky ở xứ sở những con số tàng hình</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Trẻ</span>
+                      <span class="product-item-country">Việt Nam</span>
+                    </div>
+                  
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="col l-2-4 m-4 c-6 product-item">
+                  <a href="#" class="product-item-link">
+                    <div class="product-item-img" style="background-image:url('./assets/img/ong_gia_va_bien_ca.jpg');"></div>
+
+                    <h2 class="product-item-title">Tiểu thuyết Ông già và biển cả</h2>
+
+                    <div class="product-item-price">
+                      <span class="product-item-old-price">15.500đ</span>
+                      <span class="product-item-new-price">12.500đ</span>
+                    </div>
+
+                    <div class="product-item-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="product-item-origin">
+                      <span class="product-item-publisher">Nhà X.B Văn Hóa</span>
+                      <span class="product-item-country">Hoa Kì</span>
+                    </div>
+
+                    <div class="product-item-favorite">
+                      <i class="product-item-favorite-icon fas fa-check"></i>
+                      <span>Yêu thích</span>
+                    </div>
+
+                    <div class="product-item-sale-off">
+                      <span class="product-item-sale-off-percent">25%</span>
+                      <span class="product-item-sale-off-title">Giảm</span>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="product-item-view">
+                  <a href="#" class="btn btn--primary product-item-view-link">Xem thêm</a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-contain">
+              <header class="product__heading">
+                <h2 class="product__heading-title">Kinh Tế</h2>
+              </header>
+  
+              <ul class="product__selection-list">
+                 <li class="product__selection-item">
+                   <a href="#" class="product__selection-link">
+                     Giảm sốc
+                   </a>
+                  </li> 
+  
+                  <li class="product__selection-item">
+                    <a href="#" class="product__selection-link">
+                      Sắp phát hành
+                    </a>
+                   </li>
+  
+                   <li class="product__selection-item product__selection-item--active">
+                    <a href="#" class="product__selection-link">
+                      Bán chạy
+                    </a>
+                   </li>
+              </ul>
+
+              <div class="row">
+                <div class="col l-4 m-0 c-0">
+                  <a href="#" class="product-item-link--slider">
+                    <div alt="IKEA" style="background-image: url(./assets/img/IKEA\ 350\ x\ 415.jpg);" class="product-item-img-left"></div>
+                  </a>
+                </div>
+
+                <div class="col l-8 m-12 c-12">
+                  <div class="product-item-right">
+
+                    <div class="row">
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/dung-lam-nhan-vien-noi-khung.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">Đừng làm nhân viên nổi khùng</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">79.500đ</span>
+                                  <span class="product-item-new-price">31.500đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Văn Hóa</span>
+                                  <span class="product-item-country">Hoa Kì</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/60-giay-vang.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">60 giây vàng trong bán hàng</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">168.000đ</span>
+                                  <span class="product-item-new-price">72.200đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Trẻ</span>
+                                  <span class="product-item-country">Hoa Kì</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/Len-gac-rut-thang.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">Lên gác rút thang</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">79.500đ</span>
+                                  <span class="product-item-new-price">33.850đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Văn Hóa</span>
+                                  <span class="product-item-country">Hoa Kì</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/But-chi-sac.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">Bút chì sắc , Ý tưởng lớn , Quảng cáo để đời</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">79.500đ</span>
+                                  <span class="product-item-new-price">31.500đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Thương Mại</span>
+                                  <span class="product-item-country">Đức</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="product-item-view">
+                        <a href="#" class="btn btn--primary product-item-view-link">Xem thêm</a>
+                      </div>
+
+                   
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+
+            </div>
+
+            <div class="product-contain">
+              <header class="product__heading">
+                <h2 class="product__heading-title">Tâm lý - Kỹ Năng</h2>
+              </header>
+  
+              <ul class="product__selection-list">
+                 <li class="product__selection-item">
+                   <a href="#" class="product__selection-link">
+                     Giá tốt
+                   </a>
+                  </li> 
+  
+                  <li class="product__selection-item">
+                    <a href="#" class="product__selection-link">
+                      Sắp phát hành
+                    </a>
+                   </li>
+  
+                   <li class="product__selection-item product__selection-item--active">
+                    <a href="#" class="product__selection-link">
+                      Bán chạy
+                    </a>
+                   </li>
+              </ul>
+
+              <div class="row">
+                <div class="col l-4 m-0 c-0">
+                  <a href="#" class="product-item-link--slider">
+                    <div alt="IKEA" style="background-image: url(./assets/img/lamdi350\ x\ 415.jpg);" class="product-item-img-left"></div>
+                  </a>
+                </div>
+
+                <div class="col l-8 m-12 c-12">
+                  <div class="product-item-right">
+
+                    <div class="row">
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/Biet-dung-biet-sai.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">Biết đúng biết sai - Thiên tài logic</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">138.000đ</span>
+                                  <span class="product-item-new-price">41.400đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Văn Hóa</span>
+                                  <span class="product-item-country">Hoa Kì</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/Im-lang-hay-cuoi-noi.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">Im lặng hay cười nói , đừng trói buộc thành công</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">168.000đ</span>
+                                  <span class="product-item-new-price">72.200đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Trẻ</span>
+                                  <span class="product-item-country">Hoa Kì</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/vua-cong-so.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">Vua công sở</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">79.500đ</span>
+                                  <span class="product-item-new-price">33.850đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Văn Hóa</span>
+                                  <span class="product-item-country">Hoa Kì</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="col l-6 m-6 c-6 product-item-right-product">
+
+                        <a href="#" class="product-item-right-link">
+                          <div class="row sm-gutter">
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-item-img-right" style="background-image: url('./assets/img/Co-mai-dao-sac.jpg');"></div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12">
+                              <div class="product-right-info">
+                                <h2 class="product-item-title product-item-title--right">Dao có mài dao sắc , Người phải thật mới khôn</h2>
+
+                                <div class="product-item-price">
+                                  <span class="product-item-old-price">79.500đ</span>
+                                  <span class="product-item-new-price">31.500đ</span>
+                                </div>
+
+                                <div class="product-item-rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="product-item-origin product-item-origin--right">
+                                  <span class="product-item-publisher">Nhà X.B Thương Mại</span>
+                                  <span class="product-item-country">Đức</span>
+                                </div>
+
+                               
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="product-item-favorite">
+                            <i class="product-item-favorite-icon fas fa-check"></i>
+                            <span>Yêu thích</span>
+                          </div>
+
+                          <div class="product-item-sale-off">
+                            <span class="product-item-sale-off-percent">60%</span>
+                            <span class="product-item-sale-off-title">Giảm</span>
+                          </div>
+                        </a>
+
+                      </div>
+
+                      <div class="product-item-view">
+                        <a href="#" class="btn btn--primary product-item-view-link">Xem thêm</a>
+                      </div>
+
+                   
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="email-register">
+      <div class="grid wide">
+
+        <div class="email-register-container">
+          <div class="row">
+
+            <div class="col l-5 m-5 c-12">
+
+              <div class="email-register-title">
+                <i class="email-register-icon far fa-envelope"></i>
+                <h3 class="email-register-text">Đăng ký nhận bản tin</h3>
+              </div>
+
+            </div>
+  
+            <div class="col l-7 m-7 c-12">
+              <div class="input-form">
+                <form action="#" class="form-input" method="post">
+                  <input type="text" name="email" class="email-input" placeholder="Nhập địa chỉ email của bạn" required >
+
+                  <input type="submit" class="btn btn--primary btn-submit" value="Đăng ký">
+
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+    <footer class="footer">
+
+      <div class="grid wide">
+        <div class="footer-container">
+
+          <div class="row">
+            <div class="col l-4 m-12 c-12">
+             
+              <div class="footer-left-container">
+                <div class="footer-left-image">
+                  <img src="./assets/img/BookStore logo(color).png" alt="Book logo footer" class="footer-left-img">
+                </div>
+  
+                <div class="footer-left-info">
+                  <p class="footer-left-info-text">
+                    Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM Công Ty Cổ Phần Phát Hành Sách TP HCM - BOOKSTORE60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam BookStore.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống BookStore trên toàn quốc.
+                  </p>
+                </div>
+
+                <div class="footer-left-check-image">
+                  <img src="./assets/img/logo-bo-cong-thuong-da-thong-bao.png" alt="" class="footer-left-check-img">
+                </div>
+
+                <div class="footer-left-socials">
+                  <ul class="footer-left-socials-list">
+                    <li class="footer-left-socials-item">
+                      <a href="#" class="footer-left-socials-link">
+                        <i class="footer-left-socials-icon fab fa-facebook"></i>
+                      </a>
+                    </li>
+
+                    <li class="footer-left-socials-item">
+                      <a href="#" class="footer-left-socials-link">
+                        <i class="footer-left-socials-icon fab fa-instagram"></i>
+                      </a>
+                    </li>
+
+                    <li class="footer-left-socials-item">
+                      <a href="#" class="footer-left-socials-link">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </li>
+
+                    <li class="footer-left-socials-item">
+                      <a href="#" class="footer-left-socials-link">
+                        <i class="fab fa-tumblr-square"></i>
+                      </a>
+                    </li>
+
+                    <li class="footer-left-socials-item">
+                      <a href="#" class="footer-left-socials-link">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+
+                    <li class="footer-left-socials-item">
+                      <a href="#" class="footer-left-socials-link">
+                        <i class="fab fa-pinterest"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="footer-left-app-download">
+                  <ul class="footer-left-app-list">
+                    <li class="footer-left-app-item">
+                      <a href="#" class="footer-left-app-link">
+                        <img src="./assets/img/android.png" alt="">
+                      </a>
+                    </li>
+
+                    <li class="footer-left-app-item">
+                      <a href="#" class="footer-left-app-link">
+                        <img src="./assets/img/appstore.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+  
+            <div class="col l-8 m-12 c-12">
+              <div class="footer-right-container">
+                <div class="row">
+  
+                  <div class="col l-4 m-6 c-6">
+                    <h2 class="footer-right-heading">Dịch vụ</h2>
+  
+                    <ul class="footer-right-list">
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Điều khoản sử dụng</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Chính sách bảo mật</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Giới thiệu BookStore</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Hệ thông trung tâm - nhà sách</a>
+                      </li>
+                    </ul>
+  
+                  </div>
+  
+                  <div class="col l-4 m-6 c-6">
+                    <h2 class="footer-right-heading">Hỗ Trợ</h2>
+  
+                    <ul class="footer-right-list">
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Chính sách đổi trả</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Chính sách khách sỉ</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Phương thức vận chuyển</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Phương thức thanh toán và xuất HĐ</a>
+                      </li>
+                    </ul>
+  
+                  </div>
+  
+                  <div class="col l-4 m-12 c-12">
+                    <h2 class="footer-right-heading">Tài khoản của tôi</h2>
+  
+                    <ul class="footer-right-list">
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Đăng nhập/Tạo tài khoản mới</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Thay đổi địa chỉ khách hàng</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Chi tiết khách hàng</a>
+                      </li>
+                      <li class="footer-right-item">
+                        <a href="#" class="footer-right-link">Lịch sử mua hàng</a>
+                      </li>
+                    </ul>
+  
+                  </div>
+  
+                  <div class="col l-12 m-12 c-12">
+                    <h2 class="footer-right-heading">Liên hệ</h2>
+                    <div class="row">
+                      <div class="col l-4 m-4 c-12">
+                        <div class="footer-right-bottom">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>60-62 Lê Lợi, Q.1, TP. HCM</span>
+                        </div>
+                      </div>
+                      <div class="col l-4 m-4 c-12">
+                        <div class="footer-right-bottom">
+                          <i class="fas fa-envelope"></i>
+                          <span>info@bookstore.com</span>
+                        </div>
+                      </div>
+                      <div class="col l-4 m-4 c-12">
+                        <div class="footer-right-bottom">
+                          <i class="fas fa-phone-alt"></i>
+                          <span>1900636467</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom-last">
+        <span>Giấy chứng nhận Đăng ký Kinh doanh số **0304132047** do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 28/11/2012.</span>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <!-- Modal register -->
+  <div class="modal">
+    <div class="modal-container">
+
+      <header class="modal__heading">
+        <h1 class="modal__heading-title">Đăng ký</h1>
+      </header>
+
+      <div class="modal__close">
+        <button class="modal__close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="modal__body">
+
+        <form method="" class="modal__form">
+          <div class="modal__form-group">
+            <label for="email" class="modal__label"><i class="modal__icon fas fa-envelope"></i>Email của bạn:</label>
+            <input type="text" class="modal__input" id="email" name="email" placeholder="Nhập email của bạn" >
+            <span class="modal__error-message"></span>
+          </div>
+
+          <div class="modal__form-group">
+            <label for="password" class="modal__label"><i class="modal__icon fas fa-lock"></i>Mật khẩu:</label>
+            <input type="password" class="modal__input" id="password" name="password" placeholder="Nhập mật khẩu của bạn" >
+            <span class="modal__error-message"></span>
+          </div>
+
+          <div class="modal__form-group">
+            <label for="rePassword" class="modal__label"><i class="modal__icon fas fa-lock"></i>Nhập lại mật khẩu:</label>
+            <input type="password" class="modal__input" id="rePassword" name="rePassword" placeholder="Nhập lại mật khẩu của bạn" >
+            <span class="modal__error-message"></span>
+          </div>
+
+          <div class="modal__form-group">
+            <label for="userName" class="modal__label"><i class="modal__icon fas fa-user"></i>Họ và tên:</label>
+            <input type="text" class="modal__input" id="userName" name="userName" placeholder="Nhập họ và tên của bạn" >
+            <span class="modal__error-message"></span>
+          </div>
+
+          <div class="modal__form-group">
+            <label class="modal__label"><i class="modal__icon fas fa-venus-mars"></i>Giới tính:</label>
+            <div class="modal__form-group--gender" >
+              <input type="radio" class="modal__input" value="Nam" name="gender"> <span>Nam</span>
+              <input type="radio" class="modal__input" value="Nữ" name="gender"> <span>Nữ</span> 
+              <input type="radio" class="modal__input" value="Khác" name="gender"> <span>Khác</span> 
+            </div>
+            <span class="modal__error-message"></span>
+          </div>
+
+          <input type="submit" class="modal__button-register" value="Đăng ký tài khoản">
+            
+        </form>
+     
+      </div>
+
+      <footer class="modal__footer">
+        <button class="modal__second-close">
+          Đóng <i class="fas fa-times"></i>
+        </button>
+        <span class="modal__help">Need <a href="#">help?</a></span>
+
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Modal login -->
+
+  <div class="modal-login">
+    <div class="modal-container">
+
+      <header class="modal__heading">
+        <h1 class="modal__heading-title">Đăng nhập tài khoản</h1>
+      </header>
+
+      <div class="modal__close">
+        <button class="modal__close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="modal__body">
+
+        <form method="" class="modal__form-login">
+
+          <div class="modal__form-group">
+            <label for="email" class="modal__label"><i class="modal__icon fas fa-envelope"></i>Email của bạn:</label>
+            <input type="text" class="modal__input" id="loginEmail" name="loginEmail" placeholder="Nhập email của bạn" >
+            <span class="modal__error-message"></span>
+          </div>
+
+          <div class="modal__form-group">
+            <label for="password" class="modal__label"><i class="modal__icon fas fa-lock"></i>Mật khẩu:</label>
+            <input type="password" class="modal__input" id="loginPassword" name="loginPassword" placeholder="Nhập mật khẩu của bạn" >
+            <span class="modal__error-message"></span>
+          </div>
+
+          <input type="submit" class="modal__button-register" value="Đăng nhập">
+            
+        </form>
+     
+      </div>
+
+      <footer class="modal__footer">
+        <button class="modal__second-close">
+          Đóng <i class="fas fa-times"></i>
+        </button>
+        <span class="modal__help">Need <a href="#">help?</a></span>
+
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="./assets/JS/main.js"></script>
+  <script src="./assets/JS/validator.js"></script>
+  <script src="./assets/JS/validator2.js"></script>
+  <!-- Sử dụng thư viện Validator -->
+  <script>
+    Validator({
+      form:'.modal__form',
+      errorSelector:'.modal__error-message',
+      formGroup:'.modal__form-group',
+      // Thiết lập ra các rules dùng để kiểm tra lỗi modal 
+      rules:[
+        Validator.isRequired('#userName','.modal__form'),
+        // Validator.isRequired('#loginEmail','.modal__form'),
+        // Validator.isEmail('#loginEmail'),
+        Validator.isRequired('#email','.modal__form'),
+        Validator.isRequired('#rePassword','.modal__form'),
+        Validator.isRequired('input[name="gender"]','.modal__form'),
+        // Validator.isRequired('#loginPassword','.modal__form'),
+        Validator.isEmail('#email'),
+        Validator.minLengthPassword('#password',3),
+        Validator.isConfirmedPassword('#rePassword',() => {
+          return document.querySelector('.modal__form-group #password').value;
+        })
+      ],
+      onSubmit:(data) => {
+        console.log(data);
+      }
+    });
+
+    Validator2({
+      formLogin:'.modal__form-login',
+      errorSelector:'.modal__error-message',
+      formGroup:'.modal__form-group',
+      rules:[
+        Validator2.isRequired('#loginEmail','.modal__form-logn'),
+        Validator2.isEmail('#loginEmail'),
+        Validator2.isRequired('#loginPassword','.modal__form-login')
+      ],
+      onSubmit:(data) => {
+        console.log(data);
+      }  
+    })
+
+  </script>
+
+  <!-- isRequired là kiểm tra thông tin người dùng nhập vào -->
+  <!-- isEmail là kiểm tra định dạnh email -->
+  <!-- minLengthPassword là kiểm tra độ dài mật khẩu -->
+  <!-- isConfirmedPassword là kiểm tra mật khẩu nhập lại có hợp lệ không -->
+</body>
+</html>

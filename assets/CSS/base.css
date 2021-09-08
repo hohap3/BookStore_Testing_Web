@@ -1,0 +1,286 @@
+/* Global Variable */
+
+:root {
+  --color-white:#fff;
+  --color-text:#333;
+  --color-black:#000;
+  --header-height:120px;
+  --header-navbar-height:40px;
+  --color-border:#dbdbdb;
+  --primary-color:#00649b;
+  --header-with-search-height:calc(var(--header-height) - var(--header-navbar-height));
+  --color-gold-star:#ffca00;
+  --color-block-email:#9fa7ab;
+}
+
+/* Setting all */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: inherit;
+  outline: none;
+}
+
+.app {
+  background-color: rgba(0, 0, 0, 0.1);  
+}
+
+a {
+  background-color: transparent;
+}
+
+/* Setting html */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6rem;
+}
+
+/* Modal */
+
+
+.modal {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 2;
+}
+
+.modal-login {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal-container {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--color-white);
+  width:600px;
+  animation: modalFaceIn linear 0.3s;
+}
+
+.modal__heading {
+  background:var(--primary-color);
+  height:76px;
+} 
+
+.modal__heading-title {
+  font-size: 2.2rem;
+  height:100%;
+  font-weight: 500;
+  color:var(--color-white);
+  text-transform: uppercase;
+  margin:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.modal__close {
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+
+.modal__close-btn {
+  background:none;
+  border:none;
+  height:32px;
+  width: 32px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color:var(--color-white);
+}
+
+.modal__close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color:var(--color-text);
+}
+
+.modal__footer,
+.modal__body {
+  padding: 0 12px;
+}
+
+.modal__body,
+.modal__form {
+  margin-bottom: 26px;
+}
+
+.modal__button-register {
+  margin:16px 0;
+  font-size: 1.6rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border-radius: unset;
+  border:none;
+  padding:14px 0;
+  color:var(--color-white);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.modal__button-register:hover {
+  opacity: 0.8;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.modal__second-close {
+  background-color: #f44336;
+  border:none;
+  font-size: 1.4rem;
+  padding:10px 12px;
+  color:var(--color-white);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal__second-close:hover {
+  background-color: #ccc;
+  color:var(--color-black);
+} 
+
+.modal__form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  margin:10px 0;
+  font-size: 1.4rem;
+  color:var(--color-text);
+}
+
+.modal__icon {
+  margin:0 4px;
+}
+
+.modal__input {
+  font-size: 1.4rem;
+  padding: 0 8px;
+  line-height: 1.6rem;
+  border:thin solid var(--color-border);
+  height:40px;
+  outline: none;
+  border-radius: 2px;
+  margin:0 6px;
+}
+
+.modal__help {
+  font-size: 1.4rem;
+  color:var(--color-text);
+}
+
+.modal__help a {
+  text-decoration: underline;
+  color:blue;
+}
+
+.modal__form-group--gender {
+  display: flex;
+  align-items: center;
+}
+
+
+.modal__form-group--gender span {
+  font-size: 1.4rem;
+}
+
+
+/* Animation */
+
+@keyframes FadeIn {
+  from {
+    transform:scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform:scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOpacity {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
+}
+
+@keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    transform:translateY(-140px);
+  }
+
+  to {
+    opacity: 1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* Button default */
+
+.btn {
+  min-width: 124px;
+  min-height: 34px;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  color:var(--color-white);
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn.btn--primary {
+  background-color: var(--primary-color);
+  color:var(--color-white);
+}

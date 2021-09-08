@@ -1,0 +1,37 @@
+{
+  "Product-has-bought": [
+    {
+      "id": 1,
+      "name": "Truyện ngắn Doraemon tập 1",
+      "price": "11.500đ",
+      "amount": 1,
+      "description": "Truyện tranh dành cho thiếu nhi",
+      "img": "./assets/img/doraemon_tap_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Tiểu thuyết Cố Mạn - Sống bên nhau trọn đời",
+      "price": "45.500đ",
+      "amount": 1,
+      "description": "Tiểu thuyết tình yêu",
+      "img": "./assets/img/novel-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sách giáo khoa hóa học lớp 12",
+      "price": "12.500đ",
+      "amount": 1,
+      "description": "Sách giáo khoa cấp 3",
+      "img": "./assets/img/education-book-2.jpg"
+    },
+
+    {
+      "id": 4,
+      "name": "Tiểu thuyết Kết Giới",
+      "price": "45.500đ",
+      "amount": 1,
+      "description": "Tiểu thuyết trinh thám",
+      "img": "./assets/img/ket-gioi.jpg"
+    }
+  ]
+}
