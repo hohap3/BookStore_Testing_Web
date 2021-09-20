@@ -224,33 +224,58 @@ function showItemCart(products) {
 
 // Slider
 
-var sliderIndex = 1;
-showSliders(sliderIndex);
+function sliders() {
 
-// Next/Prev button
+  let sliderIndex = 0;
 
-function plusSliders(n) {
-  showSliders(sliderIndex += n);
-}
+  const sliderImages = document.querySelectorAll('.slider-picture');
+  const nextBtn = document.querySelector('.next-btn');
+  const prevBtn = document.querySelector('.prev-btn');
 
-function showSliders(n) {
-
-  var i;
-
-  const sliderImgs = document.querySelectorAll('.slider-picture');
-
-  // Nếu mà người dùng click next vượt qua tối đa mà hình ảnh slider sãn có , ta gắn sliderIndex lại là 1 
-  if(n > sliderImgs.length) sliderIndex = 1;
-
-  // Nếu mà người dùng click preve thấp hơn tối thiểu mà hình ảnh slider sãn có , ta gắn sliderIndex lại là chính độ dài của slider img 
-  if(n < 1) sliderIndex = sliderImgs.length;
-
-  for(i = 0 ; i<sliderImgs.length ;i++) {
-    sliderImgs[i].style.display = 'none';
+  // Next / prev button
+  function nextImage() {
+    sliderIndex++;
+    if(sliderIndex > sliderImages.length - 1)
+      sliderIndex = 0;
+    showImage(sliderIndex);  
   }
 
-  sliderImgs[sliderIndex - 1].style.display = 'block';
+  function prevImage() {
+    sliderIndex--;
+    if(sliderIndex < 0)
+      sliderIndex = sliderImages.length - 1;
+    showImage(sliderIndex);  
+  }
+
+  // Show Image
+  function showImage(n) {
+    sliderImages.forEach(function(sliderImage,index) {
+      if(n === index) 
+        sliderImage.style.display = 'block';
+      else
+        sliderImage.style.display = 'none';  
+    })
+  }
+
+  // Slider tự động
+  setInterval(() => {
+    nextBtn.click();
+  }, 4500);
+
+  showImage(sliderIndex);
+
+  // Khi người dùng bấm vào nút next và prev
+  nextBtn.addEventListener('click',function() {
+    nextImage();
+  })
+
+  prevBtn.addEventListener('click',function() {
+    prevImage();
+  })
+
 }
+
+sliders();
 
 function dateSaleOff() {
 
