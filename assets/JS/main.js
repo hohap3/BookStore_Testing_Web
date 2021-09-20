@@ -259,7 +259,7 @@ function sliders() {
 
   // Slider tự động
   setInterval(() => {
-    nextBtn.click();
+    nextImage();
   }, 4500);
 
   showImage(sliderIndex);
